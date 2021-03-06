@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Anasayfa</title>
+    <link href="~/Assets/BootStrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="~/Assets/line-awesome/css/line-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="app-content content">
+        <div class="content-wrapper">
+
+            <div class="content-body">
+                <form action="#">
+                    <div class="card-content">
+                        <div class="card-block">
+                            <div class="card-body col-xl-6 col-md-6">
+                                <fieldset class="form-group">
+                                    <label class="label">Müşteri Adı :</label>
+                                    <input type="text" autocomplete="off" placeholder="Müşteri Adı Giriniz..." class="form-control col-xl-4 col-md-6" name="FirstName" id="FirstName" required>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label class="label">Müşteri Soyadı:</label>
+                                    <input type="text" autocomplete="off" placeholder="Müşteri Soyadı Giriniz..." class="form-control col-xl-4 col-md-6" name="LastName" id="LastName" required>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label class="label">Email :</label>
+                                    <input type="text" autocomplete="off" placeholder="Müşteri Email Giriniz..." class="form-control col-xl-4 col-md-6" name="Email" id="Email" required>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label class="label">Adres :</label>
+                                    <textarea class="form-control col-xl-4 col-md-6" placeholder="Müşteri Adresi Giriniz..." cols="6" rows="5" id="Address" name="Address" required></textarea>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="p-lg-3">
+                    <button class="btn btn-success" id="insert" onclick="customerInsert()"><i class="la la-save"></i>Kaydet</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Assets/Jquery/jquery-3.min.js"></script>
+    <script src="~/Assets/BootStrap/js/bootstrap.min.js"></script>
+    <script src="~/Assets/datatables/datatable-advanced.js"></script>
+    <script src="~/Assets/toastr/toastr.min.js"></script>
+    <script src="~/Assets/CustomJS/Custom.js"></script>
+</body>
+</html>
